@@ -1,46 +1,69 @@
-** {
-  border: none;
-  border-radius: 0;
-  font-family: CommitMono Nerd Font;
-  font-size: 14px;
-  min-height: 0;
+@define-color white #ffffff;
+@define-color black #000000;
+
+* {
+	font-size: 15px;
+	font-family: "Monofur Nerd Font";
 }
 
 window#waybar {
-  background: rgba(25, 23, 36, 0.95);
-  color: #e0def4;
+	background: @white;
+	color: @black;
 }
 
-#window {
-  background: none;
-  color: #908caa;
-  padding: 10px 0;
+#workspaces,
+#clock.1,
+#clock.2,
+#clock.3,
+#network,
+#pulseaudio,
+#memory,
+#cpu,
+#battery,
+#disk,
+#tray,
+#custom-power {
+	background: @white;
 }
 
 #workspaces button {
-  padding: 0 15px;
-  background: transparent;
-  color: #e0def4;
-  border-bottom: 3px solid transparent;
+	padding: 0;
+	border-radius: 0;
+	color: @black;
+}
+#workspaces button.visible {
+	background:@black;
+	color: @white;
 }
 
-#workspaces button.hover {
-  border-bottom: 3px solid #ebbcba;
+#pulseaudio {
+	color: @black;
+}
+#battery {
+	color: @black;
+}
+#battery.warning {
+	color: @yellow;
+}
+#battery.critical {
+	color: @red;
 }
 
-#workspaces button.active {
-  background: #908caa;
-  color: #191724;
+#network {
+    color: @aqua;
 }
 
 #clock,
-#pulseaudio {
-  background-color: #908caa;
-  color: #191724;
-  padding: 0 25px;
+#network,
+#pulseaudio,
+#memory,
+#cpu,
+#battery,
+#tray,
+#disk,
+#custom-power {
+	color: @black;
+	background: @white;
+	padding: 0 10px;
+	margin-left: .5em;
 }
-
-/*
- * restart waybar
- * killall -SIGUSR2 waybar
- * */
