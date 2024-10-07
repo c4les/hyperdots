@@ -1,0 +1,6 @@
+[window]
+padding = { x = 25, y = 25 }
+opacity = 0.85
+
+[font.normal]
+family = "RobotoMono Nerd Font"
