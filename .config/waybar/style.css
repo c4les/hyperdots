@@ -1,0 +1,122 @@
+@define-color white #ffffff;
+@define-color black #000000;
+
+* {
+	font-size: 15px;
+	font-family: "RobotoMono Nerd Font";
+}
+
+window#waybar {
+	background: #1C1C1C;
+	color: @white;
+	border-radius: 15;
+}
+
+#clock.1 {
+	background: #2C2C2C;
+	color: @white;
+	margin: 2px;
+	border-radius: 15px 5px 5px 15px;
+}
+#clock.2 {
+	background: #2C2C2C;
+	color: @white;
+	margin: 2px;
+	border-radius: 5px 15px 15px 5px;
+}
+#workspaces {
+	background: #2C2C2C;
+        color: @white;
+        margin: 2px;
+        border-radius: 5px 5px 5px 5px;
+}
+#window {
+	background: #2C2C2C;
+        color: @white;
+        margin: 2px;
+	border-width: 75px;
+        border-radius: 5px 15px 15px 5px;
+}
+#custom-menu {
+	background: #2C2C2C;
+        color: @white;
+        margin: 2px;
+        border-radius: 15px 5px 5px 15px;
+}
+#clock.3,
+#network {
+	background: #2C2C2C;
+        color: @white;
+        margin: 2px;
+        border-radius: 15px 5px 5px 15px;
+}
+#pulseaudio {
+	background: #2C2C2C;
+        color: @white;
+        margin: 2px;
+        border-radius: 5px 5px 5px 5px;
+}
+#memory,
+#cpu,
+#battery,
+#disk,
+#tray,
+#custom-power {
+	background: #2C2C2C;
+	border-radius: 15px;
+}
+
+#workspaces button {
+	padding: 0;
+	margin: 3px;
+	border-radius: 5;
+	color: @white;
+}
+#workspaces button.visible {
+	background:@black;
+	color: @white;
+}
+
+#pulseaudio {
+        background: #2C2C2C;
+        color: @white;
+        margin: 2px;
+        border-radius: 5px 5px 5px 5px;
+}
+#battery {
+	color: @black;
+}
+#battery.warning {
+	color: @yellow;
+}
+#battery.critical {
+	color: @red;
+}
+
+#custom-network {
+        background: #2C2C2C;
+        color: @white;
+        margin: 2px;
+        border-radius: 5px 15px 15px 5px;
+}
+
+#clock
+#custom-network,
+#pulseaudio {
+        background: #2C2C2C;
+        color: @white;
+        margin: 2px;
+        border-radius: 5px 5px 5px 5px;
+}
+#memory,
+#cpu,
+#battery,
+#tray,
+#disk,
+#custom-power {
+	color: @white;
+	background: #2C2C2C;
+	padding: 0 10px;
+	margin: 2px;
+	border-radius: 5px 15px 15px 5px;
+}
