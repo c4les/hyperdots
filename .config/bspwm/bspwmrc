@@ -1,0 +1,28 @@
+#!/bin/sh
+
+# NOTE: if config doesn't works, do chmod +x ~/.config/bspwm/bspwmrc
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+nitrogen --restore &
+polybar &
+setxkbmap -layout us,ru -option grp:lalt_lshift_toggle &
+
+bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+
+bspc config pointer_modifier mod4
+bspc config pointer_action1 move
+bspc config pointer_action2 resize_side
+bspc config pointer_action2 resize_corner
+
+bspc config border_width         2
+bspc config window_gap           5
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   false
+bspc config gapless_monocle      false
+
+bspc config normal_border_color     "#121212"
+bspc config active_border_color     "#568d72"
+bspc config focused_border_color    "#5e8d87"
+bspc config presel_feedback_color   "#BD93F9"
